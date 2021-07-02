@@ -1,0 +1,211 @@
+@media (max-width: 900px) {
+    html {
+        font-size: calc((10 / 750) * 100vw);
+    }
+}
+
+.wrap-container {
+    .title-area {
+        text-align: center;
+        .title-sub {
+            color: #fff;
+            font-size: 42px;
+            font-weight: 300;
+            word-break: keep-all;
+            letter-spacing: -0.7px;
+        }
+        .title-main {
+            color: #fff;
+            font-size: 75px;
+            font-weight: 500;
+            margin-top: 14px;
+            word-break: keep-all;
+            letter-spacing: -1px;
+        }
+    }
+    .sub-ment {
+        color: #fff;
+        font-size: 24px;
+        text-align: center;
+        font-weight: 300;
+        margin-top: 36px;
+        line-height: 1.4;
+        letter-spacing: -1px;
+        word-break: keep-all;
+    }
+    /* 견적상담받기 bar */
+    .consult-bar {
+        display: none;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 99;
+        width: 100%;
+        height: 70px;
+        background-color: #001d1a;
+        .inner {
+            display: flex;
+            margin: 0 auto;
+            width: 66%;
+            height: 100%;
+        }
+        h4 {
+            position: relative;
+            width: 190px;
+            img {
+                position: absolute;
+                left: 0;
+                top: -25px;
+                width: 100%;
+                height: auto;
+            }
+        }
+        .user-info {
+            width: calc(100% - 356px);
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                li {
+                    color: #fff;
+                    label {
+                        margin-right: 15px;
+                    }
+                    input {
+                        margin-left: -4px;
+                        padding-left: 10px;
+                        height: 35px;
+                        box-sizing: border-box;
+                        &::placeholder {
+                            font-family: 'NanumSquare', sans-serif;
+                            font-size: 16px;
+                            letter-spacing: -1px;
+                            color: #000;
+                        }
+                    }
+                    &:nth-child(2) {
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+        .btn-estimate {
+            width: 166px;
+        }
+    } /* //견적상담받기 bar */
+} /*//container*/
+
+@media (max-width: 1465px) {
+    .wrap-container {
+        .consult-bar {
+            .inner {
+                width: 93%;
+            }
+            h4 {
+                top: 10px;
+                width: 175px;
+            }
+            .user-info {
+                width: calc(100% - 355px);
+                ul {
+                    li {
+                        &:nth-child(2) {
+                            margin: 0 10px;
+                        }
+                        label {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            } /*user-info*/
+            .btn-estimate {
+                width: 160px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1175px) {
+    .wrap-container {
+        .consult-bar {
+            .inner {
+                display: flex;
+                justify-content: space-between;
+                width: 95%;
+            }
+            h4 {
+                top: 10px;
+                width: 175px;
+            }
+            .user-info {
+                width: calc(100% - 395px);
+                ul {
+                    li {
+                        &:nth-child(2) {
+                            margin: 0 10px;
+                        }
+                        label {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            } /*user-info*/
+            .btn-estimate {
+                width: 160px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1075px) {
+    .consult-bar {
+        .user-info {
+            ul {
+                li {
+                    label {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .wrap-container {
+        .title-area {
+            .title-sub {
+                font-size: 2.6rem;
+                font-weight: 300;
+                letter-spacing: -0.7px;
+            }
+            .title-main {
+                font-size: 4.6rem;
+                font-weight: 500;
+                margin-top: 1.4rem;
+                letter-spacing: -1px;
+            }
+        }
+        .sub-ment {
+            color: #fff;
+            font-size: 2.4rem;
+            font-weight: 300;
+            margin-top: 3.2rem;
+            line-height: 1.4;
+            letter-spacing: -1px;
+            word-break: keep-all;
+        }
+        .consult-bar {
+            display: none;
+        }
+    }
+}
+
+@import './_cont';
+@import './_shoping';
+@import './_intro';
+@import './_carlist';
+@import './_qna';
+@import './_quote';
+@import './_side';

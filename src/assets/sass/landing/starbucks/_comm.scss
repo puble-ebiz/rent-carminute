@@ -1,0 +1,93 @@
+.contents-area {
+    // position: absolute;
+    // width: 100%;
+    // top: 0;
+    // left: 0;
+    margin-top: -49%;
+
+    .ask-area {
+        padding-top: 50px;
+        padding-bottom: 82px;
+        position: relative;
+        max-width: 1196px;
+        width: 100%;
+        // min-height: 725px;
+        margin: 0 auto;
+        background: url('http://static.carminute.co.kr/img/landing/tesla/tsla_lighting.png') no-repeat top,
+            linear-gradient(150deg, #0f4197, #2399c9, #0f4197, #2399c9);
+        opacity: 0.9;
+
+        .m-consult-wrap-tsla {
+            display: none;
+        }
+
+        .top-ment {
+            width: 600px;
+            margin: 0 auto;
+
+        }
+
+        .btn-consult2 {
+            position: absolute;
+            right: 14%;
+            margin-top: -36px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 2px solid #fff;
+            border-radius: 50%;
+            width: 112px;
+            height: 112px;
+            color: #fff;
+
+            .img-box {
+                width: 32px;
+                padding-left: 9px;
+
+            }
+
+            .p-txt {
+                margin-top: 7px;
+                font-family: 'GmarketSans', sans-serif;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@media(max-width:900px) {
+
+    .contents-area {
+
+
+        .ment-all {
+            .content {
+                h3 {
+                    font-size: 4.2rem;
+                    padding: 8.0rem 0 1.5rem;
+                }
+
+                p {
+                    font-size: 2.5rem;
+                    line-height: 4.0rem;
+                }
+            }
+
+            .text {
+                width: 90%;
+                margin: auto;
+
+                p {
+                    font-size: 2.5rem;
+                    line-height: 3.5rem;
+                }
+            }
+        }
+
+    }
+
+}

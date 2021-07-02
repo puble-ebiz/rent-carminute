@@ -1,0 +1,419 @@
+@charset 'utf-8';
+
+
+
+
+
+.body {
+    background-color: #0e0e0e;
+    margin: 0;
+}
+
+
+
+
+@media(max-width:900px) {
+    html {
+        font-size: calc((10/700)*100vw);
+    }
+
+    .show-mobile {
+        display: block !important;
+    }
+
+
+
+}
+
+
+.land-wrap {
+    width: 100%;
+
+    .land-container {
+        width: 100%;
+
+        section {
+            width: 100%;
+            max-width: 750px;
+            margin: auto;
+
+        }
+
+    }
+}
+
+
+.sect-main {
+    background-color: #24453f;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.starbucks {
+    font-size: 1.9rem;
+
+    // padding-bottom: 10.0rem;
+    >img {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 18.0rem;
+    }
+
+    article {
+        font-family: 'GmarketSans', 'Noto Sans KR';
+        background-color: #24453f;
+
+        img {
+            width: 100%;
+        }
+
+        ol {
+            padding-left: 3.0rem;
+        }
+    }
+
+    article.title {
+        padding: 15.0rem 10.0rem 5.0rem;
+        background: url(' http://static.carminute.co.kr/img/landing/starbucks/bg_light.png') no-repeat;
+        background-size: cover;
+        text-align: center;
+
+        img:nth-of-type(2) {
+            padding-top: 3.5rem;
+        }
+
+    }
+
+    article.list {
+        background: #0b281f;
+
+        img {
+            display: block;
+            width: 80%;
+            padding: 2.5rem;
+            margin: auto;
+        }
+    }
+
+    article.inputbox {
+        width: 80%;
+        padding: 2.5rem 0;
+        margin: auto;
+        font-family: 'GmarketSans', 'Noto Sans KR';
+
+        input::placeholder {
+            color: #d5d5d5;
+        }
+
+        input[type="text"] {
+            display: block;
+            width: 100%;
+            margin-bottom: 1.0rem;
+            padding: 1.5rem;
+            background: #101010;
+            border: none;
+            line-height: 3.3rem;
+            font-size: 3.0rem;
+            font-family: 'GmarketSans', 'Noto Sans KR';
+            color: white;
+            font-weight: 300;
+            box-sizing: border-box;
+        }
+
+        >div {
+            display: flex;
+
+            .checks_box {
+                display: flex;
+                margin-bottom: 1.0rem;
+                padding-top: 1rem;
+            }
+
+            .checks {
+                margin-left: 5px;
+
+                input[type="radio"] {
+                    position: absolute;
+                    width: 1px;
+                }
+
+                input[type="radio"]+label {
+                    display: block;
+                    position: relative;
+                    padding-left: 25px;
+                    cursor: pointer;
+                    font-size: 3.5rem;
+                    font-weight: 300;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                }
+
+                input[type="radio"]+label:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    margin-top: -12px;
+                    width: 19px;
+                    height: 19px;
+                    text-align: center;
+                    border: 1px solid white;
+                    border-radius: 100%;
+                    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+                }
+
+                input[type="radio"]+label:active:before,
+                input[type="radio"]:checked+label:active:before {
+                    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+                }
+
+                input[type="radio"]:checked+label:before {
+                    border-color: white;
+                }
+
+                input[type="radio"]:checked+label:after {
+                    content: '';
+                    position: absolute;
+                    top: 35%;
+                    left: 7px;
+                    width: 7px;
+                    height: 7px;
+                    background: white;
+                    border-radius: 100%;
+                    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+                }
+
+
+            }
+
+
+
+            button {
+                display: block;
+                width: 10.0rem;
+                margin-bottom: 1.0rem;
+                margin-left: 1.0rem;
+                background: #50876c;
+                border-radius: 5px;
+                font-size: 2.8rem;
+                color: white;
+                border: none;
+
+            }
+        }
+
+        .btn-consult {
+            padding: 3.0rem 0 2.0rem;
+            background-color: #24453f;
+            border: none;
+        }
+
+        .info {
+            font-family: 'Noto Sans KR';
+            position: relative;
+            padding: 1.5rem 0;
+            font-size: 2.7rem;
+            font-weight: 300;
+
+            input[type="checkbox"] {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                padding: 0;
+                margin: -1px;
+                overflow: hidden;
+                clip: rect(0, 0, 0, 0);
+                border: 0
+            }
+
+            input[type="checkbox"]+label {
+                display: inline-block;
+                position: relative;
+                cusor: pointer;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            input[type="checkbox"]+label:before {
+                content: ' ';
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                line-height: 25px;
+                margin: -2px 8px 0 0;
+                text-align: center;
+                vertical-align: middle;
+                background: rgba(255, 255, 255, 0.2);
+                border: 2px solid #cacece;
+                border-radius: 3px;
+                box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+
+            }
+
+            input[type="checkbox"]+label:active:before,
+
+            input[type="checkbox"]:checked+label:active:before {
+                box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+
+            }
+
+            input[type="checkbox"]:checked+label:before {
+                content: '\2713';
+                color: white;
+                text-shadow: 1px 1px white;
+                background: #24453f;
+                box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+
+            }
+
+            a {
+                display: block;
+                padding-left: 2.0rem;
+                color: white;
+            }
+        }
+
+    }
+
+    article.img {
+        position: relative;
+        height: 35.0rem;
+        background: url("http://static.carminute.co.kr/img/landing/starbucks/bg_coffe.png") no-repeat bottom;
+        background-size: 100%;
+
+        img {
+            display: block;
+            position: absolute;
+        }
+
+        img.bubble {
+            top: -3%;
+            left: 8%;
+            width: 28%;
+        }
+
+        img.car {
+            top: 40%;
+            width: 40%;
+        }
+    }
+
+    article.notice {
+        font-family: 'Noto Sans KR';
+        width: 80%;
+        padding-left: 3.0rem;
+
+        .title {
+            margin: 0;
+            list-style: disc;
+            padding: 2.0rem 0 0;
+            font-weight: bold;
+            font-size: 3.0rem;
+        }
+
+        ol {
+            padding: 0
+        }
+    }
+}
+
+
+@import "./_comm";
+
+@import "./_footer";
+
+// @import "./_main";
+
+@import "./_info_input";
+
+@import "./_side";
+
+
+
+
+/*모바일용 버튼*/
+.btn-bottom-sect {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+    .btn-area {
+        display: flex;
+        width: 100%;
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 12.6rem;
+
+            .p-txt {
+                font-size: 3.8rem;
+                font-weight: 500;
+                margin-left: 1.4rem;
+            }
+        }
+
+        .btn-tel {
+            width: 20%;
+            background-color: #000000;
+
+            .icon {
+                width: 7.8rem;
+            }
+        }
+
+        .btn-estimate {
+            background-color: #331c74;
+
+            .icon {
+                width: 3.4rem;
+            }
+
+            .p-txt {
+                padding-top: 1.0rem;
+                color: #fff;
+            }
+        }
+
+        .btn-kakao {
+            background-color: #4d256c;
+
+            .icon {
+                width: 7.6rem;
+            }
+
+            .p-txt {
+                padding-top: 1.0rem;
+                color: #e3cb21;
+
+            }
+        }
+    }
+}
+
+
+
+
+.aos-item {
+    margin: auto;
+}
+
+.aos-item__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: left;
+    background: #1da4e2;
+    line-height: 260px;
+    text-align: center;
+    color: #fff;
+}
+
+
+// 스타벅스 이벤트팝업 start
