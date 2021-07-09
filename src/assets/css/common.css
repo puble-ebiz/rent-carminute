@@ -662,7 +662,7 @@ pop-consult-wrap-tsla {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 605;
+  z-index: 500;
   background-color: rgba(0, 0, 0, 0.6);
 }
 .popup-event > div {
@@ -1029,6 +1029,14 @@ pop-consult-wrap-tsla {
   .show-pc,
   .pc-img {
     display: none;
+  }
+  /* 팝업: 스타벅스 */
+  .popup-event > div .btn-open-consult {
+    padding: 0 3.5rem;
+    box-sizing: border-box;
+  }
+  .popup-event > div .btn-open-consult img {
+    width: 100%;
   }
   /* 상단 탑배너 */
   .header {
@@ -1475,6 +1483,7 @@ pop-consult-wrap-tsla {
   .header .top-banner .btn-close img {
     width: 70%;
   }
+
   /* 팝업: 스타리아 */
   .popup-staria .apply-form {
     padding: 0 4rem 3rem;
