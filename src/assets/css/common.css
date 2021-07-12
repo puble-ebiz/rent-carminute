@@ -307,7 +307,7 @@ pop-consult-wrap-tsla {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 500;
+  z-index: 600;
   background-color: rgba(0, 0, 0, 0.6);
 }
 .popup-staria .inwrap {
@@ -422,7 +422,68 @@ pop-consult-wrap-tsla {
 .popup-staria .apply-form .btn-request .icon-img img {
   width: auto;
 }
+@media (max-width: 900px) {
+  .popup-staria .inwrap {
+    width: 55%;
+  }
+}
+@media (max-width: 768px) {
+  .popup-staria .inwrap {
+    width: 65%;
+  }
+}
+@media (max-width: 600px) {
+  .popup-staria .apply-form {
+    padding: 0 4rem 3rem;
+  }
+  .popup-staria .apply-form form {
+    width: 100%;
+  }
+  .popup-staria .apply-form form .agreement label:before {
+    width: 20px;
+    height: 20px;
+  }
+  .popup-staria .apply-form form .agreement input:checked + label:before {
+    font-size: 15px;
+  }
+  .popup-staria .apply-form form .agreement label span {
+    margin-top: 4px;
+    font-size: 15px;
+  }
+  .popup-staria .apply-form .btn-more {
+    margin-top: 2px;
+    font-size: 15px;
+    line-height: 21px;
+  }
 
+  .popup-staria .apply-form .btn-request {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .popup-staria .apply-form .btn-request .icon-img {
+    right: -6rem;
+    bottom: -1rem;
+    width: 85px;
+  }
+  .popup-staria .apply-form .btn-request .icon-img img {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .popup-staria .inwrap {
+    width: 90%;
+  }
+}
+@media (max-width: 320px) {
+  .popup-staria .apply-form .btn-more {
+    font-size: 12px;
+    line-height: 21px;
+  }
+  .popup-staria .apply-form .btn-request .icon-img {
+    width: 70px;
+  }
+}
 /* //popup: staria */
 
 /* pop 상담신청완료 */
@@ -1417,9 +1478,7 @@ pop-consult-wrap-tsla {
     line-height: 48px;
   }
   /* 팝업: 스타리아 */
-  .popup-staria .inwrap {
-    width: 55%;
-  }
+
   /* //팝업: 스타리아 */
   /* 개인정보 활용정책 */
   .pop-policy-wrap .pop-policy {
@@ -1464,9 +1523,6 @@ pop-consult-wrap-tsla {
   }
 
   /* 팝업: 스타리아 */
-  .popup-staria .inwrap {
-    width: 65%;
-  }
 } /* //768 */
 @media (max-width: 600px) {
   .header .top-banner .banner-box {
@@ -1485,42 +1541,6 @@ pop-consult-wrap-tsla {
   }
 
   /* 팝업: 스타리아 */
-  .popup-staria .apply-form {
-    padding: 0 4rem 3rem;
-  }
-  .popup-staria .apply-form form {
-    width: 100%;
-  }
-  .popup-staria .apply-form form .agreement label:before {
-    width: 20px;
-    height: 20px;
-  }
-  .popup-staria .apply-form form .agreement input:checked + label:before {
-    font-size: 15px;
-  }
-  .popup-staria .apply-form form .agreement label span {
-    margin-top: 4px;
-    font-size: 15px;
-  }
-  .popup-staria .apply-form .btn-more {
-    margin-top: 2px;
-    font-size: 15px;
-    line-height: 21px;
-  }
-
-  .popup-staria .apply-form .btn-request {
-    display: block;
-    margin: 0 auto;
-    width: 90%;
-  }
-  .popup-staria .apply-form .btn-request .icon-img {
-    right: -6rem;
-    bottom: -1rem;
-    width: 85px;
-  }
-  .popup-staria .apply-form .btn-request .icon-img img {
-    width: 100%;
-  }
 } /*//600*/
 @media (max-width: 425px) {
   .popup-event > div {
@@ -1540,21 +1560,8 @@ pop-consult-wrap-tsla {
     font-size: 3.6rem;
   }
 
-  .popup-staria .inwrap {
-    width: 90%;
-  }
-
   /* 업로드 */
   .pop-consult-wrap .pop-consult .event-starbucks {
     bottom: -15rem;
   }
 } /* //425 */
-@media (max-width: 320px) {
-  .popup-staria .apply-form .btn-more {
-    font-size: 12px;
-    line-height: 21px;
-  }
-  .popup-staria .apply-form .btn-request .icon-img {
-    width: 70px;
-  }
-} /* //320 */
