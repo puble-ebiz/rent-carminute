@@ -29,6 +29,9 @@ $(document).ready(function () {
   $(".top-banner .btn-close").click(function () {
     $(".top-banner").hide();
   });
+  $(".popup-staria .btn-close").click(function () {
+    $(".popup-staria").hide();
+  });
 
   //banner popup
   var banner = $(".banner_long-term .banner-box"),

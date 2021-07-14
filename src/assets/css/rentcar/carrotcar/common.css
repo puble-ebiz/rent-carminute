@@ -546,9 +546,19 @@ pop-consult-wrap-tsla {
 .popup-staria .apply-form .btn-request .icon-img img {
   width: auto;
 }
+.popup-staria .apply-form .btn-request .icon-img .m-img {
+  display: none;
+}
+
 @media (max-width: 900px) {
   .popup-staria .inwrap {
     width: 55%;
+  }
+  .popup-staria .apply-form .btn-request .icon-img .m-img {
+    display: block;
+  }
+  .popup-staria .apply-form .btn-request .icon-img .pc-img {
+    display: none;
   }
 }
 @media (max-width: 768px) {

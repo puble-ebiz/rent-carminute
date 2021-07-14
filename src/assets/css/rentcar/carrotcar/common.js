@@ -39,9 +39,9 @@ $(document).ready(function () {
   $(".popup-staria .btn-close").click(function () {
     $(".popup-staria").hide();
   });
-  $(".popup-staria .btn-request").click(function () {
-    $(".modal-complete-request").show();
-  });
+  // $(".popup-staria .btn-request").click(function () {
+  //   $(".modal-complete-request").show();
+  // });
   $(".top-banner .banner-box").click(function () {
     $(".popup-event").show();
   });
